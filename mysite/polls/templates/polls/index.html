@@ -1,0 +1,4 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<li><a href="{% url 'polls:detail' poll.id %}">{{ poll.question }}</a></li>
